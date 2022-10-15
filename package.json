@@ -1,0 +1,23 @@
+{
+  "name": "zodiac-controllers",
+  "version": "1.0.0",
+  "description": "![image showing signs' traits and categories](./zodiac.jpeg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hussain-ai/zodiac-controllers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hussain-ai/zodiac-controllers/issues"
+  },
+  "homepage": "https://github.com/Hussain-ai/zodiac-controllers#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs')  %> 
+    <h1>Home, <%= name %></h1>
+    <ul>
+        <li><a href="http://localhost:3000/home"> Home</a></li>
+        <li><a href="http://localhost:3000/about"> About</a></li>
+        <li><a href="http://localhost:3000/blog"> Blog</a></li>
+    </ul>
+<% let dogAge = age*7 %>
+<h2>Your age is: <%= age %></h2>
+<h2>You are <%= dogAge %> in dog years.</h2>
+<% let status %>
+<% if(dogAge< 200) {%>
+    <% status = 'young'%>
+    <% } else {%>
+        <% status = 'old' %>
+        <% } %>
+        <h3>This means you are <%=status%>!</h3>
+</body>
+</html>
