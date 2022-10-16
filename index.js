@@ -3,6 +3,7 @@ const app = express()
 const port = 3000
 const ejsLayouts = require('express-ejs-layouts')
 const router = express.Router()
+
 // const signs = ['aries', 'capricorn', 'gemini', 'leo', 'libra', 'pisces', 'sigittarius', 'scorpio', 'taurus', 'virgo' ]
 // const water_signs = ['pisces', 'aquarius', 'gemini']
 // const air_signs = ['']
@@ -24,17 +25,17 @@ app.get("/air", (req, res) => {
 });
 
 app.get("/air/gemini", (req, res) => {
-  res.render('images.ejs',{URL:"imgs/gemini.PNG"});
+  res.render('images.ejs',{URL:"./imgs/gemini.PNG"});
   // res.send(" hello")
 });
 app.get("/air/libra", (req, res) => {
    
-  res.render('images.ejs',{URL:"imgs/libra.PNG"});
+  res.render('images.ejs',{URL:"./imgs/libra.PNG"});
   res.send(" hello")
 });
 app.get("/air/aquarius", (req, res) => {
 
-res.render('images.ejs',{URL:"imgs/aquarius.PNG"});
+res.render('images.ejs',{URL:"./imgs/aquarius.PNG"});
 res.send(" hello")
 });
 //----
@@ -122,3 +123,5 @@ app.get("/earth/capricorn", (req, res) => {
   app.listen(3000, () =>{
     console.log(`I'm listening to port ${port}`)
 })
+
+module.exports=router;
